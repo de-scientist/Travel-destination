@@ -63,10 +63,97 @@
         max-width: 600px;
         margin: 0 auto;
       }
+      
+      .intro {
+        text-align: center;
+        padding: 3rem 2rem;
+        background: linear-gradient(135deg, #fef9f4, #fff5e1);
+        border-radius: 12px;
+        margin: 2rem auto;
+        max-width: 900px;
+        box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+      }
+
+      .intro h1 {
+        font-size: 2.5rem;
+        color: #ff6f00;
+        margin-bottom: 1rem;
+        font-family: 'Poppins', sans-serif;
+        letter-spacing: 1px;
+      }
+
+      .intro p {
+        font-size: 1.1rem;
+        color: #444;
+        line-height: 1.7;
+        max-width: 700px;
+        margin: 0 auto;
+        font-family: 'Open Sans', sans-serif;
+      }
+
+      .newsletter {
+        background: linear-gradient(135deg, #f8f9fa, #e3f2fd);
+        text-align: center;
+        padding: 3rem 1rem;
+        border-radius: 12px;
+        margin: 2rem;
+        max-width: 600px;
+        box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      }
+
+      .newsletter h2 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+        color: #333;
+      }
+
+      .newsletter p {
+        color: #555;
+        margin-bottom: 1.5rem;
+      }
+
+      .newsletter-form {
+        display: flex;
+        justify-content: center;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+      }
+
+      .newsletter-form input {
+        padding: 0.75rem 1rem;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        width: 250px;
+        font-size: 1rem;
+        outline: none;
+        transition: border 0.3s ease;
+      }
+
+      .newsletter-form input:focus {
+        border-color: #2196f3;
+        box-shadow: 0 0 6px rgba(33, 150, 243, 0.3);
+      }
+
+      .newsletter-form button {
+        background: #2196f3;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background 0.3s ease;
+      }
+
+      .newsletter-form button:hover {
+        background: #1769aa;
+      }
 
     </style>
 </head>
 <body>
+
+  <section class="intro">
     <h1>Welcome, Traveler! ✈️🌍</h1>
     <p>Discover the beauty of the world through my Top 5 Travel Destinations showcase. 
        This page takes you on a journey through five of the world’s most captivating destinations. 
@@ -74,6 +161,7 @@
        and snapshots that bring the experience to life. Whether you’re planning your next trip 
        or just exploring from home, let these destinations inspire your wanderlust.
     </p>
+  </section>
 
     <ol>
       
@@ -349,8 +437,8 @@
         </li>
     </ol>
 
-
-    <h2>Join my newsletter</h2>
+<section class="newsletter">
+    <h2>📩 Subscribe to my Newsletter</h2>
     <p>
       Thank you for exploring the world with us! 🌍✨ These destinations are just a glimpse 
       of the beauty, culture, and adventure our planet has to offer. Want more travel inspiration, 
@@ -359,24 +447,22 @@
     </p>
         
 
-   <form action="">
-    <label for="f-name">First Name</label>
-        <input type="text" name="" id="f-name" placeholder="eg: John ">
-
+   <form class="newsletter-form" action="">
+        <label for="f-name">First Name</label>
+        <input type="text" name="" id="f-name" placeholder="eg: John " required>
         <br>
 
         <label for="l-name">Last Name</label>
-        <input type="text" name="" id="l-name" placeholder="eg: Doe ">
-
+        <input type="text" name="" id="l-name" placeholder="eg: Doe " required>
         <br>
 
         <label for="email">Email Address</label>
-        <input type="email" name="" id="email" placeholder="eg: johndoe@gmail.com ">
-
+        <input type="email" name="" id="email" placeholder="eg: johndoe@gmail.com " required>
         <br>
 
-        <button>Am In</button>
+        <button type="submit">Am In</button>
    </form> 
+</section>
 
 </body>
 </html>
