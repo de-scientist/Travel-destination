@@ -40,6 +40,30 @@
         max-width: 100%;
         border-radius: 8px;
       }
+
+      .destination-intro {
+        background: linear-gradient(135deg, #fdfbfb, #ebedee);
+        border-radius: 12px;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        text-align: center;
+      }
+
+      .destination-intro h3 {
+        margin-bottom: 10px;
+        font-size: 1.5rem;
+        color: #222;
+      }
+
+      .destination-intro p {
+        font-size: 1rem;
+        color: #555;
+        line-height: 1.5;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
     </style>
 </head>
 <body>
@@ -53,63 +77,73 @@
 
     <ol>
       
-        <li>Paris, France
+        <li>
+          <div class="destination-intro">
+          <h3>Paris, France</h3>
             <p>
                 Paris is the beating heart of romance, art, and history. From its 
                 iconic landmarks to charming cafés tucked in cobblestone streets, 
                 it’s a city where every corner tells a story
             </p>
+            </div>
+
             <h4>Activities</h4>
-            <ol>
-                <li>
-                    Visit the Eiffel Tower
+            <div class="activities">
+              <div class="card">
+                    <h5>Visit the Eiffel Tower</h5>
                   <figure>
                     <img src="./images/eiffel.jpg" alt="The Eiffel Tower standing tall against the Parisian sky" width="200px">
                     <figcaption>The Eiffel Tower standing tall against the Parisian sky</figcaption>
                   </figure>  
-                </li>
+                </div>
 
-                <li>
-                   Explore the Louvre Museum
+                <div class="card">
+                   <h5>Explore the Louvre Museum</h5>
                    <figure>
                     <img src="./images/museum.jpg" alt="Art lovers’ paradise at the Louvre Museum" width="200px">
                     <figcaption>Art lovers’ paradise at the Louvre Museum</figcaption>
                    </figure>
-                </li>
+                </div>
 
-               <li>
-                   Stroll along the Seine River
+               <div class="card">
+                  <h5> Stroll along the Seine River </h5>
                    <figure>
                     <img src="./images/river.jpg" alt="A stroll by the Seine at sunset" width="200px">
                     <figcaption>A stroll by the Seine at sunset</figcaption>
                    </figure>
-                </li>
+                </div>
 
-                  <li>
-                   Shop along Champs-Élysées
+                <div class="card">
+                   <h5>Shop along Champs-Élysées</h5>
                    <figure>
                     <img src="./images/champs.jpg" alt="Champs-Élysées in full bloom" width="200px">
                     <figcaption>Champs-Élysées in full bloom</figcaption>
                    </figure>
-                </li>
+                </div>
 
-                  <li>
-                   Try authentic French pastries
+                <div class="card">
+                   <h5>Try authentic French pastries</h5>
                    <figure>
                     <img src="./images/pastries.jpg" alt="Croissants fresh from a Paris bakery" width="200px">
                     <figcaption>Croissants fresh from a Paris bakery</figcaption>
                    </figure>
-                </li>
-            </ol>
+                </div>
+            </div>
         </li>
 
-        <li>Tokyo, Japan
+        <li>
+          <div class="destination-intro">
+
+          <h3>Tokyo, Japan</h3>
             <p>
                 Tokyo dazzles with its mix of tradition and innovation. 
                 Ancient temples stand alongside neon-lit skyscrapers, 
                 offering visitors a unique blend of history, technology, 
                 and vibrant culture.
             </p>
+
+            </div>
+
             <h4>Activities</h4>
             <ol>
                 <li>
