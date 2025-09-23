@@ -16,7 +16,6 @@ Each destination includes a short description and a list of activities, displaye
 ## 📂 Project Structure
 project-folder/
 │── index.html # Main HTML file
-│── style.css # Styling for the page
 │── /images # Folder containing images for activities
 │ ├── time.jpg
 │ ├── park.jpg
@@ -25,8 +24,8 @@ project-folder/
 │ └── bridge.jpg
 └── README.md # Project documentation
 
-yaml
-Copy code
+
+
 
 ---
 
@@ -42,16 +41,14 @@ Copy code
    git clone https://github.com/yourusername/travel-destinations.git
 Open the project folder:
 
-bash
-Copy code
+
 cd travel-destinations
 Open index.html in your browser.
 
 🖼️ Example Layout
 Each activity is shown as a card:
 
-css
-Copy code
+
 Activity Title
 [Image]
 Caption text
